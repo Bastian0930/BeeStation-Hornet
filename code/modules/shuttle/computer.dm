@@ -64,6 +64,7 @@
 		switch(SSshuttle.moveShuttle(shuttleId, href_list["move"], 1))
 			if(0)
 				say("Shuttle departing. Please stand away from the doors.")
+				log_game("[usr] has called the [shuttleId] shuttle.")
 			if(1)
 				to_chat(usr, "<span class='warning'>Invalid shuttle requested.</span>")
 			else
